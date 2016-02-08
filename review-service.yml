@@ -1,6 +1,6 @@
 test:
   hello1: AbcdEfgh
-  hello2: 100
+  hello2: 666666100
 
 server:
   port: 0
