@@ -50,6 +50,10 @@ couchbase:
       fork-join-executor:
         parallelism-factor: 4.0
         parallelism-max: 40
+  sheet:
+    - aaa
+    - bbb
+    - ccc
   buckets:
     - 
       host: couchbase
