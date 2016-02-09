@@ -51,7 +51,8 @@ couchbase:
         parallelism-factor: 4.0
         parallelism-max: 40
   buckets:
-    - host: couchbase
+    - 
+      host: couchbase
       port: 8091
       base: pools
       bucket: static_profile
