@@ -51,9 +51,7 @@ couchbase:
         parallelism-factor: 4.0
         parallelism-max: 40
   sheet:
-    - aaa
-    - bbb
-    - ccc
+    fan: ok-ob
   buckets:
     - 
       host: couchbase
