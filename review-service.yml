@@ -50,17 +50,6 @@ couchbase:
       fork-join-executor:
         parallelism-factor: 2.0
         parallelism-max: 47
-  sheet:
-    fan: ok-ob
-  buckets:
-    - 
-      host: couchbase
-      port: 8091
-      base: pools
-      bucket: static_profile
-      # user:
-      # pass:
-      timeout:0
 
 ---
 # For deployment in Cloud Foundry
