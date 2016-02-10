@@ -43,14 +43,6 @@ app:
   rabbitmq:
     host: rabbitmq
 
-couchbase:
-  akka:
-    timeout: 9000
-    execution-context:
-      fork-join-executor:
-        parallelism-factor: 2.0
-        parallelism-max: 47
-
 ---
 # For deployment in Cloud Foundry
 spring:
