@@ -42,3 +42,11 @@ server:
 app:
   rabbitmq:
     host: rabbitmq
+
+couchbase:
+  hosts:
+    - couchbase
+    - couchbase2
+  buckets:
+    - dynamic_profile
+    - static_profile
