@@ -9,9 +9,9 @@ info:
   component: Profile Managment Function (POC)
 
 my:
-   servers:
-       - dev.bar.com
-       - foo.bar.com
+  servers:
+    - dev.bar.com
+    - foo.bar.com
 
 mycouchbase:
   hosts:
