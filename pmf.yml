@@ -1,0 +1,64 @@
+test:
+  hello1: AbcdEfgh
+  hello2: 666666100
+
+server:
+  port: 0
+
+info:
+  component: Profile Managment Function (POC)
+
+my:
+   servers:
+       - dev.bar.com
+       - foo.bar.com
+
+mycouchbase:
+  hosts:
+    - couchbase
+    - couchbase2
+  buckets:
+    - dynamic_profile
+    - static_profile
+
+ribbon:
+  # Interval to refresh the server list from the source
+  serverListRefreshInterval: 1000
+#
+#  # Connect timeout used by Apache HttpClient
+#  connectTimeout: 100
+#
+#  # Read timeout used by Apache HttpClient
+#  readTimeout: 10000
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 1
+    metadataMap:
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
+  client:
+    # Default values comes from org.springframework.cloud.netflix.eurek.EurekaClientConfigBean
+    registryFetchIntervalSeconds: 1
+    instanceInfoReplicationIntervalSeconds: 1
+    initialInstanceInfoReplicationIntervalSeconds: 1
+
+---
+# For deployment in Docker containers
+spring:
+  profiles: docker
+
+server:
+  port: 8080
+
+app:
+  rabbitmq:
+    host: rabbitmq
+
+couchbase:
+  hosts:
+    - couchbase
+    - couchbase2
+  buckets:
+    - dynamic_profile
+    - static_profile
