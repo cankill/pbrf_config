@@ -9,6 +9,14 @@ info:
   component: Profile Managment Function (POC)
 
 
+mycouchbase:
+  hosts:
+    - couchbase
+    - couchbase2
+  buckets:
+    - dynamic_profile
+    - static_profile
+
 ribbon:
   # Interval to refresh the server list from the source
   serverListRefreshInterval: 1000
