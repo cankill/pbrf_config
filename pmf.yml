@@ -16,7 +16,6 @@ my:
 mycouchbase:
   hosts:
     - couchbase
-    - couchbase2
   buckets:
     - dynamic_profile
     - static_profile
