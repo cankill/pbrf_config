@@ -1,24 +1,15 @@
-test:
-  hello1: AbcdEfgh
-  hello2: 666666100
-
 server:
-  port: 0
+  port: 8080
 
 info:
   component: Profile Managment Function (POC)
 
-my:
-  servers:
-    - dev.bar.com
-    - foo.bar.com
-
-mycouchbase:
-  hosts:
-    - couchbase
-  buckets:
-    - dynamic_profile
-    - static_profile
+# mycouchbase:
+#   hosts:
+#     - couchbase
+#   buckets:
+#     - dynamic_profile
+#     - static_profile
 
 ribbon:
   # Interval to refresh the server list from the source
@@ -57,7 +48,8 @@ app:
 couchbase:
   hosts:
     - couchbase
-    - couchbase2
   buckets:
-    - dynamic_profile
-    - static_profile
+    dynamic: dynamic_profile
+    static: static_profile
+  connect:
+    timeout: 11001
