@@ -51,5 +51,6 @@ couchbase:
   buckets:
     dynamic: dynamic_profile
     static: static_profile
-  connect:
-    timeout: 11001
+  timeout:
+    connect: 11001,
+    kv: 10000
