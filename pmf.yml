@@ -52,5 +52,5 @@ couchbase:
     dynamic: dynamic_profile
     static: static_profile
   timeout:
-    connect: 11001,
+    connect: 11001
     kv: 10000
